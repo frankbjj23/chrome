@@ -11,13 +11,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="ambient-layer ambient-layer-one" aria-hidden="true"></div>
+  <div class="ambient-layer ambient-layer-two" aria-hidden="true"></div>
+  <div class="noise-layer" aria-hidden="true"></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <div class="announcement-bar" role="note">For promotional use only. Quickstrike live window: 30 days only.</div>
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
-      <a href="#top" class="brand" aria-label="Home">CH Atelier</a>
+      <a href="#top" class="brand" aria-label="Home"></a>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
         <span></span>
@@ -48,15 +51,36 @@
     </nav>
   </header>
 
+  <section class="proof-ticker" aria-label="Live drop activity">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </section>
+
   <main id="main-content">
-    <section class="hero reveal" aria-labelledby="hero-title">
+    <section class="hero reveal cinematic" aria-labelledby="hero-title">
       <p class="eyebrow">Capsule 02 / 2026</p>
       <h1 id="hero-title">CHROME ❤️</h1>
       <p class="hero-disclaimer">For promotional use only.</p>
       <p class="hero-subhead">Hand-laid leather patchwork paired with a custom sterling silver button on top. Built in tiny batches with strict material-first finishing.</p>
       <p class="quickstrike-note">Quickstrike exclusivity: this site and drop are available for 30 days only. Limited product count.</p>
+      <div class="countdown-shell" aria-live="polite" aria-label="Quickstrike countdown">
+        <p class="countdown-label">Quickstrike timer</p>
+        <div class="countdown-grid" id="countdownGrid">
+          <div class="countdown-unit">
+            <span id="days">30</span>
+            <small>Days</small>
+          </div>
+          <div class="countdown-unit">
+            <span id="hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="countdown-unit">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+          </div>
+        </div>
+      </div>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#shop">Shop the Drop</a>
+        <a class="btn btn-primary magnetic" href="#shop">Shop the Drop</a>
         <a class="btn btn-secondary" href="#lookbook">View Lookbook</a>
       </div>
     </section>
@@ -75,6 +99,29 @@
         <p>Editorial cuts from the same capsule.</p>
       </div>
       <div class="lookbook-scroll" id="lookbookScroll" aria-label="Lookbook gallery"></div>
+      <div class="lookbook-meta">
+        <p id="lookbookCaption">Look 01 / Cathedral Noir</p>
+        <div class="lookbook-progress" aria-hidden="true">
+          <span id="lookbookProgressBar"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="craft reveal" id="craft" aria-labelledby="craft-title">
+      <div class="section-head">
+        <h2 id="craft-title">Craft Detail</h2>
+        <p>Slide to compare raw form against finished CHROME treatment.</p>
+      </div>
+      <div class="comparison-wrap">
+        <div class="comparison-media" id="comparisonMedia">
+          <img src="images/hat-2.jpg" alt="Raw fitted hat concept before finishing details" class="comparison-before" />
+          <div class="comparison-after-wrap" id="comparisonAfterWrap">
+            <img src="images/hat-1.jpg" alt="Finished fitted with leather patchwork and sterling silver button on top" class="comparison-after" />
+          </div>
+        </div>
+        <label class="comparison-control" for="comparisonRange">Craft slider</label>
+        <input id="comparisonRange" type="range" min="0" max="100" value="58" />
+      </div>
     </section>
 
     <section class="story reveal" id="story" aria-labelledby="story-title">

@@ -2,7 +2,7 @@ const hats = [
   {
     id: "h1",
     name: "Noir Cathedral 59FIFTY",
-    image: "images/hat-1.jpg",
+    image: "images/chrome-black-on-black-yankee.JPG",
     alt: "Black custom fitted hat with tonal leather patchwork",
     price: "$400",
     stock: 12,
@@ -29,7 +29,7 @@ const hats = [
   {
     id: "h4",
     name: "Ivory Cross Crest",
-    image: "images/hat-4.jpg",
+    image: "images/Chrome-Yankee-White-crosses.JPG",
     alt: "Ivory custom fitted hat with leather overlays and stitched cross motifs",
     price: "$400",
     stock: 9,

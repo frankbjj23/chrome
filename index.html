@@ -27,7 +27,7 @@
   <div class="noise-layer" aria-hidden="true"></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <div class="announcement-bar" role="note">For promotional use only. Quickstrike live window: 30 days only.</div>
+  <div class="announcement-bar" role="note">For promotional use only. Collection showcase.</div>
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
@@ -41,7 +41,7 @@
       </button>
 
       <div class="nav-menu" id="nav-menu">
-        <a href="#shop">Shop</a>
+        <a href="#collection">Collection</a>
         <a href="#lookbook">Lookbook</a>
         <a href="#story">Story</a>
         <a href="#faq">FAQ</a>
@@ -50,15 +50,6 @@
       <div class="nav-actions">
         <button class="mode-toggle" id="modeToggle" aria-label="Toggle light mode">
           <span class="mode-toggle-text">Light</span>
-        </button>
-        <button class="cart-button" id="cartOpen" aria-label="Open cart">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M3 4h2l2.2 10.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H7"></path>
-            <circle cx="10" cy="20" r="1.5"></circle>
-            <circle cx="18" cy="20" r="1.5"></circle>
-          </svg>
-          <span>Cart</span>
-          <span class="cart-count" id="cartCount">0</span>
         </button>
       </div>
     </nav>
@@ -77,9 +68,9 @@
       </figure>
       <p class="hero-disclaimer">For promotional use only.</p>
       <p class="hero-subhead">Hand-laid leather patchwork paired with a custom sterling silver button on top. Built in tiny batches with strict material-first finishing.</p>
-      <p class="quickstrike-note">Quickstrike exclusivity: this site and drop are available for 30 days only. Limited product count.</p>
-      <div class="countdown-shell" aria-live="polite" aria-label="Quickstrike countdown">
-        <p class="countdown-label">Quickstrike timer</p>
+      <p class="quickstrike-note">Collection showcase only. Items are display pieces and not for sale.</p>
+      <div class="countdown-shell" aria-live="polite" aria-label="Showcase timer">
+        <p class="countdown-label">Showcase timer</p>
         <div class="countdown-grid" id="countdownGrid">
           <div class="countdown-unit">
             <span id="days">30</span>
@@ -96,15 +87,15 @@
         </div>
       </div>
       <div class="hero-actions">
-        <a class="btn btn-primary magnetic" href="#shop">Shop the Drop</a>
+        <a class="btn btn-primary magnetic" href="#collection">View Collection</a>
         <a class="btn btn-secondary" href="#lookbook">View Lookbook</a>
       </div>
     </section>
 
-    <section class="products reveal" id="shop" aria-labelledby="products-title">
+    <section class="products reveal" id="collection" aria-labelledby="products-title">
       <div class="section-head">
-        <h2 id="products-title">The Drop</h2>
-        <p>Four custom fitted silhouettes. 30-day quickstrike window. Limited units only.</p>
+        <h2 id="products-title">Collection</h2>
+        <p>Four custom fitted silhouettes presented for viewing only.</p>
       </div>
       <div class="product-grid" id="productGrid" aria-live="polite"></div>
     </section>
@@ -157,8 +148,8 @@
       </div>
       <div class="faq-list">
         <details>
-          <summary>When do orders ship?</summary>
-          <p>Orders dispatch in 3-5 business days. Tracking is emailed once your package leaves the studio.</p>
+          <summary>Can I buy items from this site?</summary>
+          <p>No. This website is a visual showcase only and does not process orders.</p>
         </details>
         <details>
           <summary>Are these hats authentic brand products?</summary>
@@ -173,8 +164,8 @@
           <p>Choose your standard fitted size. If you are between sizes, size up for a more relaxed fit.</p>
         </details>
         <details>
-          <summary>Can I return a hat?</summary>
-          <p>Returns are accepted within 14 days for unworn items with original tags attached.</p>
+          <summary>Are these pieces available for purchase?</summary>
+          <p>No. The current site is for presentation and lookbook viewing only.</p>
         </details>
         <details>
           <summary>How do I care for leather and silver details?</summary>
@@ -204,22 +195,6 @@
       </div>
     </div>
   </footer>
-
-  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cart-title" aria-hidden="true">
-    <div class="cart-panel" role="dialog" aria-modal="true">
-      <div class="cart-header">
-        <h2 id="cart-title">Cart</h2>
-        <button id="cartClose" aria-label="Close cart">Close</button>
-      </div>
-      <div class="cart-body">
-        <p class="cart-note">Demo checkout only. No payment is collected.</p>
-        <ul id="cartItems"></ul>
-        <button id="checkoutButton" class="checkout-btn">Complete Demo Checkout</button>
-        <div id="orderConfirmation" class="order-confirmation" aria-live="polite"></div>
-      </div>
-    </div>
-    <button class="cart-backdrop" id="cartBackdrop" aria-label="Close cart"></button>
-  </aside>
 
   <script src="app.js"></script>
 </body>
